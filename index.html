@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Nhiet do:<span id="nhietdo">00</span></h2>
+    <h2>do am:<span id="doam">00</span></h2>
+    <img id="denid_01" class="card-id-top" src="light-bulb-on2.png" alt="card image" width="20%" height="20%">
+    <div>
+        <button id="btnOnid_01">ON</button>
+        <button id="btnOffid_01">OFF</button>
+    </div>
+    <lable>settemp</lable><input id="temp" type="number"><br>
+    <lable>sethum</lable><input id="hum" type="number"><br>
+    <button type="submit" id="sendbtn">gui</button>
+
+    <div class="slidecontainer">    
+        <p>Custom range slider:</p>
+        <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+    <script type="module" src="demo.js">
+
+// Import the functions you need fom the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js";
+    import { getDatabase, set, get, ref, push, child } from "https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js";   
+    </script>
+</body>
+</html>
